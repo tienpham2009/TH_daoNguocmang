@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao nguoc phan tu trong mang</title>
+</head>
+<body>
+<script>
+    let arr = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+    document.write('mang ban dau la :' + arr + '<br>');
+    let fisrt = 0;
+    let last = arr.length - 1
+    while (fisrt < last) {
+        a = arr[fisrt];
+        arr[fisrt] = arr[last];
+        arr[last] = a;
+        fisrt++;
+        last--;
+    }
+    document.write('mang sau khi dao nguoc la :' + arr);
+
+</script>
+</body>
+</html>
